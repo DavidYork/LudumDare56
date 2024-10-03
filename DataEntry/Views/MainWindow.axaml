@@ -1,0 +1,65 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:DataEntry.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
+        x:Class="DataEntry.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="DataEntry">
+
+  <Design.DataContext>
+    <!-- This only sets the DataContext for the previewer in an IDE,
+       to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+    <vm:MainWindowViewModel/>
+  </Design.DataContext>
+
+  <!-- <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/> -->
+
+  <StackPanel Margin="20" Spacing="20" Orientation="Horizontal" >
+
+    <!-- Panel 1 -->
+    <StackPanel Margin="10" Background="#222" Width="400">
+      <StackPanel Spacing="20" Margin="20">
+
+        <!-- Heading -->
+        <TextBlock Height="40" FontSize="32" Text="Panel 1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <!-- Spacer -->
+        <Panel Height="15" />
+
+        <TextBlock Text="Hello" />
+      </StackPanel>
+    </StackPanel>
+
+    <!-- Panel 2 -->
+    <StackPanel Margin="10" Background="#222" Width="400">
+      <StackPanel Spacing="20" Margin="20">
+
+        <!-- Heading -->
+        <TextBlock Height="40" FontSize="32" Text="Panel 2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <!-- Spacer -->
+        <Panel Height="15" />
+
+        <TextBlock Text="Hello 2" />
+      </StackPanel>
+    </StackPanel>
+
+    <!-- Panel 3 -->
+    <StackPanel Margin="10" Background="#222" Width="400">
+      <StackPanel Spacing="20" Margin="20">
+
+        <!-- Heading -->
+        <TextBlock Height="40" FontSize="32" Text="Panel 3" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <!-- Spacer -->
+        <Panel Height="15" />
+
+        <TextBlock Text="Hello 3" />
+      </StackPanel>
+    </StackPanel>
+
+  </StackPanel>
+</Window>
