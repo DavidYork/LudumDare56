@@ -24,8 +24,10 @@ public readonly struct InkEngineState {
     public readonly Dictionary<string, string> Tags;
     public readonly string[] Metadata;
 
-    public InkEngineState(string textBody, Story story, string[] metadata, Dictionary<string, string> tags) {
-        Message = textBody;// story.currentText;
+    public InkEngineState(string textBody, Story story, string[] metadata,
+        Dictionary<string, string> tags)
+    {
+        Message = textBody;
         Choices = story.currentChoices.ConvertAll(s => new InkChoice(s)).ToArray();
         ImageName = null;
         Tags = tags;
