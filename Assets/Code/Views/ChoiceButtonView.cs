@@ -6,7 +6,10 @@ public class ChoiceButtonView: MonoBehaviour {
 
     public InkChoice Choice { get; private set; }
 
-    public void OnClick() => Game.DoPlayerChoice(Choice);
+    public void OnClick() {
+        Game.DoPlayerChoice(Choice);
+        LD.Audio.PlaySound(Sound.click);
+    }
 
     public void Setup(InkChoice choice) {
         Choice = choice;
