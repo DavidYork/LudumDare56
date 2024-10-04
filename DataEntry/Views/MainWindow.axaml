@@ -19,9 +19,11 @@
 
   <StackPanel Margin="20" Spacing="20" Orientation="Horizontal" >
 
-    <!-- Panel 1 -->
+    <!-- Panel 1: -->
     <StackPanel Margin="10" Background="#222" Width="400">
-      <StackPanel Spacing="20" Margin="20">
+
+      <!-- Test Json -->
+      <StackPanel Spacing="5" Margin="20">
 
         <!-- Heading -->
         <TextBlock Height="40" FontSize="32" Text="Panel 1" HorizontalAlignment="Center" VerticalAlignment="Center" />
@@ -29,13 +31,52 @@
         <!-- Spacer -->
         <Panel Height="15" />
 
-        <TextBlock Text="Hello" />
+        <!-- Choose Info -->
+
+        <DockPanel HorizontalAlignment="Left" >
+          <ComboBox Name="SelectItemComboBox" HorizontalAlignment="Left" Width="360"
+            ItemsSource="{Binding CurrentInfoSource}"
+            SelectedIndex="{Binding CurrentInfoSelection}"
+            SelectedItem="{Binding CurrentInfo}" />
+        </DockPanel>
+
+        <!-- Create new -->
+        <Panel>
+          <TextBox Text="{Binding NewInfoName}" Width="250" HorizontalAlignment="Left" />
+          <Button Command="{Binding OnCreateNew}" Content="New Entity" HorizontalAlignment="Right" />
+        </Panel>
+
+        <!-- Spacer -->
+        <Panel Height="10" />
+
+        <!-- Name -->
+        <Panel>
+          <TextBlock Text="Name" HorizontalAlignment="Left" VerticalAlignment="Center" />
+          <TextBox Text="{Binding Name}" HorizontalAlignment="Right" Width="210"/>
+        </Panel>
+
+        <!-- Value -->
+        <Panel>
+          <TextBlock Text="Value" HorizontalAlignment="Left" VerticalAlignment="Center" />
+          <TextBox Text="{Binding Value}" HorizontalAlignment="Right" Width="210"/>
+        </Panel>
+
       </StackPanel>
+
+      <!-- Spacer -->
+      <Panel Height="15" Background="#000" />
+
+      <!-- Second thing -->
+      <StackPanel Spacing="5" Margin="20">
+        <!-- Heading -->
+        <TextBlock Height="40" FontSize="32" Text="Panel 1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+      </StackPanel>
+
     </StackPanel>
 
     <!-- Panel 2 -->
     <StackPanel Margin="10" Background="#222" Width="400">
-      <StackPanel Spacing="20" Margin="20">
+      <StackPanel Spacing="5" Margin="20">
 
         <!-- Heading -->
         <TextBlock Height="40" FontSize="32" Text="Panel 2" HorizontalAlignment="Center" VerticalAlignment="Center" />
@@ -49,7 +90,7 @@
 
     <!-- Panel 3 -->
     <StackPanel Margin="10" Background="#222" Width="400">
-      <StackPanel Spacing="20" Margin="20">
+      <StackPanel Spacing="5" Margin="20">
 
         <!-- Heading -->
         <TextBlock Height="40" FontSize="32" Text="Panel 3" HorizontalAlignment="Center" VerticalAlignment="Center" />
