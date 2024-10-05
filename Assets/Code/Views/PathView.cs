@@ -23,14 +23,14 @@ public class PathView: MonoBehaviour {
                 break;
             case PathState.Visible:
                 foreach (var pd in PathDots) {
-                    pd.color = Config.GfxPathDotsNotSelectedAlpha;
-                    pd.gameObject.SetActive(true);;
+                    pd.color = LD.Cfg.GfxMapNotSelectedColorOverlay;
+                    pd.gameObject.SetActive(true);
                 }
                 break;
             case PathState.Emphasized:
                 foreach (var pd in PathDots) {
                     pd.color = Color.white;
-                    pd.gameObject.SetActive(true);;
+                    pd.gameObject.SetActive(true);
                 }
                 break;
             default:

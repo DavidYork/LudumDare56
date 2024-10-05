@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public static class Config {
-    public static Color GfxPathDotsNotSelectedAlpha = new Color(.8f, .8f, .8f, 1f);
+public class Config: MonoBehaviour {
+    public Color GfxMapNotSelectedColorOverlay = new Color(.8f, .8f, .8f, 1f);
 
     [Tooltip("Time spent to get from dot to dot")]
-    public static float GfxPathTravelSpeed = .2f;
+    public float GfxPathTravelSpeed = .2f;
 }

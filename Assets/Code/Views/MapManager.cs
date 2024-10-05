@@ -38,7 +38,18 @@ public class MapManager: MonoBehaviour {
         }
     }
 
-    public PathView[] GetPathsFrom(POIView origin) => Array.FindAll(_paths, p => p.Start == origin || p.End == origin);
+    public PathView[] GetPathsFrom(POIView origin) {
+        var rv = new List<PathView>();
+        foreach (var path in _paths) {
+            if (CurrentPOI != _startPOI && path.Start == _startPOI) {
+                continue;
+            }
+            if (path.Start == origin || path.End == origin) {
+                rv.Add(path);
+            }
+        }
+        return rv.ToArray();
+    }
 
     public void HidePaths() {
         foreach (var path in _paths) {
@@ -63,10 +74,13 @@ public class MapManager: MonoBehaviour {
         }
 
         _startMoveTime = Time.time;
-
         HidePaths();
         _currentPath.State = PathView.PathState.Emphasized;
         _currentTarget.Highlighted = true;
+        _pointsToWalkThrough[0].gameObject.SetActive(false);
+        if (_pointsToWalkThrough.Count > 0) {
+            _pointsToWalkThrough[1].gameObject.SetActive(false);
+        }
 
         Game.SetState(GameData.GameState.Traveling);
     }
@@ -105,8 +119,14 @@ public class MapManager: MonoBehaviour {
     }
 
     void Awake() {
-        _paths = GameObject.FindObjectsByType<PathView>(FindObjectsSortMode.None);
-        _pois = GameObject.FindObjectsByType<POIView>(FindObjectsSortMode.None);
+        _paths = GameObject.FindObjectsByType<PathView>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        _pois = GameObject.FindObjectsByType<POIView>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+    }
+
+    void Start() {
+        foreach (var path in _paths) {
+            path.gameObject.SetActive(true);
+        }
     }
 
     void Update() {
@@ -114,10 +134,13 @@ public class MapManager: MonoBehaviour {
             return;
         }
 
-        var speed = Config.GfxPathTravelSpeed;
+        var speed = LD.Cfg.GfxPathTravelSpeed;
 
         while (Time.time > _startMoveTime + speed) {
             _pointsToWalkThrough[0].gameObject.SetActive(false);
+            if (_pointsToWalkThrough.Count > 1) {
+                _pointsToWalkThrough[1].gameObject.SetActive(false);
+            }
             _pointsToWalkThrough.RemoveAt(0);
             if (_pointsToWalkThrough.Count == 0) {
                 arriveAtDestination();

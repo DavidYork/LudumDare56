@@ -8,6 +8,7 @@ public static class LD {
     public static DB DB;
     public static AudioManager Audio;
     public static UI UI;
+    public static Config Cfg;
 
     public static void Initialize() {
         Audio = GameObject.FindFirstObjectByType<AudioManager>();
@@ -16,6 +17,7 @@ public static class LD {
             Audio = go.AddComponent<AudioManager>();
         }
         UI = GameObject.FindFirstObjectByType<UI>();
+        Cfg = GameObject.FindFirstObjectByType<Config>();
     }
 
     public static void OnStartNewGame(string inkJson) {

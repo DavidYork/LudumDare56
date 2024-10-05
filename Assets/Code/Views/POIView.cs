@@ -3,11 +3,11 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class POIView: MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
-    [SerializeField] Image _highlight;
+    [SerializeField] Image _image;
 
     public bool Highlighted {
-        get => _highlight.gameObject.activeSelf;
-        set => _highlight.gameObject.SetActive(value);
+        get => _image.color == Color.white;
+        set => _image.color = value == true ? Color.white : LD.Cfg.GfxMapNotSelectedColorOverlay;
     }
 
     public void OnClick() {
