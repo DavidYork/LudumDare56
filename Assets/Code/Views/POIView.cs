@@ -3,10 +3,20 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class POIView: MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
+    public Encounter[] Encounters;
+
+    public int LowAnimals;
+    public int LowPlants;
+    public int LowMagic;
+    public int LowBeauty;
+
+    public int HighAnimals = 3;
+    public int HighPlants = 3;
+    public int HighMagic = 3;
+    public int HighBeauty = 3;
+
     [SerializeField] Image _image;
     [SerializeField] Button _button;
-
-    public Encounter[] Encounters;
 
     public bool Highlighted {
         get => _image.color == Color.white;

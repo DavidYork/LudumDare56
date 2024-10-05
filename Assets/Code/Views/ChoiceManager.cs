@@ -28,15 +28,13 @@ public class ChoiceManager: MonoBehaviour {
     }
 
     public void RebuildChoices() {
-        if (OnFinished != null) {
-            Debug.Log("Found one");
-        }
         ClearChoices();
 
         var inkState = LD.Ink.CurrentState;
         if (inkState.Message.IsNil()) {
-            OnFinished?.Invoke();
+            var callback = OnFinished;
             OnFinished = null;
+            callback?.Invoke();
             return;
         }
 

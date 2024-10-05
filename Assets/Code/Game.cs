@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -10,6 +11,12 @@ public static class Game {
     public static void DoPlayerChoice(InkChoice choice) {
         LD.Ink.DoChoice(choice);
         UI.ChoiceMgr.RebuildChoices();
+    }
+
+    public static void DoSettleAndEndGame() {
+        Debug.LogWarning("TODO: Settle and end game here");
+        UI.ChoiceMgr.OnFinished = null;
+        SetState(GameData.GameState.Settling);
     }
 
     public static void DoStartIntro() {
@@ -43,6 +50,7 @@ public static class Game {
             setupAndDoEncounter();
             break;
         case GameData.GameState.Explore:
+            setupAndDoExploration();
             break;
         case GameData.GameState.FutureSight:
             break;
@@ -93,14 +101,38 @@ public static class Game {
 
         string chosenEncounter;
         if (unvisited.Count == 0) {
-            chosenEncounter = validEncounters[Random.Range(0, validEncounters.Count)];
+            chosenEncounter = validEncounters[UnityEngine.Random.Range(0, validEncounters.Count)];
         } else {
-            chosenEncounter = unvisited.ToArray()[Random.Range(0, unvisited.Count)];
+            chosenEncounter = unvisited.ToArray()[UnityEngine.Random.Range(0, unvisited.Count)];
             LD.Data.VisitedEncounters.Add(chosenEncounter);
         }
 
         LD.Ink.DoKnot(chosenEncounter);
-        UI.ChoiceMgr.OnFinished = () => SetState(GameData.GameState.ChoosingDestination);
+        UI.ChoiceMgr.OnFinished = () => SetState(GameData.GameState.Explore);
         UI.ChoiceMgr.RebuildChoices();
+    }
+
+    static void setupAndDoExploration() {
+        var poi = UI.MapMgr.CurrentPOI;
+        var locationKnot = $"Location_{poi.name}";
+        if (!LD.Ink.KnotExists(locationKnot)) {
+            Debug.LogError($"Knot does not exist: {locationKnot}. Write it in Ink.");
+            SetState(GameData.GameState.ChoosingDestination);
+            return;
+        }
+
+        Func<int, int, int, int> calcVal = (low, high, stories)
+            => UnityEngine.Random.Range(low, high+1) + stories;
+
+        LD.Ink.SetVariable($"{LocAttributes.animals}", calcVal(poi.LowAnimals, poi.HighAnimals, LD.Data.AnimalStories));
+        LD.Ink.SetVariable($"{LocAttributes.plants}", calcVal(poi.LowPlants, poi.HighPlants, LD.Data.PlantStories));
+        LD.Ink.SetVariable($"{LocAttributes.magic}", calcVal(poi.LowMagic, poi.HighMagic, LD.Data.MagicStories));
+        LD.Ink.SetVariable($"{LocAttributes.beauty}", calcVal(poi.LowBeauty, poi.HighBeauty, LD.Data.BeautyStories));
+
+        LD.Ink.DoKnot(locationKnot);
+        UI.ChoiceMgr.RebuildChoices();
+        UI.ChoiceMgr.OnFinished = () => {
+            SetState(GameData.GameState.ChoosingDestination);
+        };
     }
 }

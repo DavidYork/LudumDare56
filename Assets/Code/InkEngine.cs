@@ -47,6 +47,8 @@ public class InkEngine {
     public InkEngine(string inkJson) {
         _story = new Story(inkJson);
         _story.BindExternalFunction("chooseMapDestination", onChooseMapDestination);
+        _story.BindExternalFunction("doSettleAndEndGame", onDoSettleAndEndGame);
+        _story.BindExternalFunction("get", (InkList res) => onGet(res.ToEnum<Resource>()));
         _story.BindExternalFunction("gain", (InkList res, int amount) => onGain(res.ToEnum<Resource>(), amount));
         _story.BindExternalFunction("lose", (InkList res, int amount) => onLose(res.ToEnum<Resource>(), amount));
     }
@@ -72,6 +74,11 @@ public class InkEngine {
         return rv.ToArray();
     }
 
+    public int GetVariable(string name) => (int)_story.variablesState[name];
+    public void SetVariable(string name, int value) => _story.variablesState[name] = value;
+
+    public bool KnotExists(string knotName) => _story.KnotContainerWithName(knotName) != null;
+
     // Private
 
     void executeUntilNextChoice() {
@@ -96,10 +103,18 @@ public class InkEngine {
         CurrentState = new InkEngineState(sb.ToString(), _story, meta.ToArray(), tags);
     }
 
-    void onChooseMapDestination() {
-        Debug.Log("Exploring");
-        Game.DoChooseMapDestination();
-    }
+    void onChooseMapDestination() => Game.DoChooseMapDestination();
+
+    void onDoSettleAndEndGame() => Game.DoSettleAndEndGame();
+
+    int onGet(Resource res) => (res) switch {
+        Resource.Coins => LD.Data.Coins,
+        Resource.Dust => LD.Data.Dust,
+        Resource.Fairies => LD.Data.Fairies,
+        Resource.Fruit => LD.Data.Fruit,
+        Resource.Trinkets => LD.Data.Trinkets,
+        _ => throw new Exception($"Cannot understand {res}")
+    };
 
     void onGain(Resource res, int amount) {
         switch (res) {

@@ -1130,7 +1130,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'This is a line of text.
+
+    This is the next line.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1171,7 +1173,7 @@ MonoBehaviour:
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
+  m_paragraphSpacing: 54
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
@@ -1218,7 +1220,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &675399605
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1372,6 +1374,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 400362964, guid: 5771b34dcd1894d8aa8cd50dc8dad599, type: 3}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: HighMagic
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: HighBeauty
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: HighPlants
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: HighAnimals
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
       value: 1
@@ -1654,6 +1672,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -3069688444733510968, guid: 5771b34dcd1894d8aa8cd50dc8dad599, type: 3}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: HighMagic
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: HighBeauty
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: HighPlants
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: HighAnimals
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1793,7 +1827,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1067496371
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2119,7 +2153,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1128807531
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2615,7 +2649,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'This is a line of text.
+
+    This is the next line.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2656,7 +2692,7 @@ MonoBehaviour:
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
+  m_paragraphSpacing: 54
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
@@ -3027,6 +3063,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 715647872, guid: 5771b34dcd1894d8aa8cd50dc8dad599, type: 3}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: HighMagic
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: HighBeauty
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: HighPlants
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: HighAnimals
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
       value: 1
