@@ -2,6 +2,7 @@ using Ink.Runtime;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
 public readonly struct InkChoice {
     public readonly string Description => _choice.text;
@@ -44,6 +45,7 @@ public class InkEngine {
 
     public InkEngine(string inkJson) {
         _story = new Story(inkJson);
+        _story.BindExternalFunction("chooseMapDestination", onChooseMapDestination);
     }
 
     public void DoChoice(InkChoice command) {
@@ -78,5 +80,10 @@ public class InkEngine {
         }
 
         CurrentState = new InkEngineState(sb.ToString(), _story, meta.ToArray(), tags);
+    }
+
+    void onChooseMapDestination() {
+        Debug.Log("Exploring");
+        Game.DoChooseMapDestination();
     }
 }

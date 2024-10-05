@@ -44,10 +44,10 @@ Example: Stories about animals. An area could have squirrels. They look like thi
 
 ### Location attributes
 These are the location attributes:
-- Animals
-- Plants
-- Magic
-- Beauty
+- **Animals**
+- **Plants**
+- **Magic**
+- **Beauty**
 
 ## Encounters
 Each location will have a series of scripted encounters which can be either repeated or not depending on design. The encounters are specifically authored to the location. Basically "exploring the forest/ruins/bridge/mountains/grove/whatever" has a collection of encounters authored to each place (and maybe some reusable location-independent ones) and the player makes choices about the encounters which almost always result in spending resources, but sometimes give them a story.

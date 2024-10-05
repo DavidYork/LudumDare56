@@ -7,6 +7,7 @@ public static class LD {
     public static InkEngine Ink;
     public static DB DB;
     public static AudioManager Audio;
+    public static UI UI;
 
     public static void Initialize() {
         Audio = GameObject.FindFirstObjectByType<AudioManager>();
@@ -14,6 +15,7 @@ public static class LD {
             var go = new GameObject("Audio Manager");
             Audio = go.AddComponent<AudioManager>();
         }
+        UI = GameObject.FindFirstObjectByType<UI>();
     }
 
     public static void OnStartNewGame(string inkJson) {
