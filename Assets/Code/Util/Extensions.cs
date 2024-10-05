@@ -1,6 +1,6 @@
-#nullable disable
 using System;
 using System.IO;
+using Ink.Runtime;
 
 public static class Extensions {
     public static bool IsNil(this string self) => string.IsNullOrWhiteSpace(self);
@@ -15,11 +15,21 @@ public static class Extensions {
         return files;
     }
 
+    public static TEnum ToEnum<TEnum>(this InkList src) where TEnum: struct, Enum {
+	    var values = src.Values;
+	    var enumerator = values.GetEnumerator();
+	    enumerator.MoveNext();
+	    var val = enumerator.Current;
+
+	    TEnum enumVal = (TEnum)Enum.ToObject(typeof(TEnum) , val - 1);
+	    return enumVal;
+	}
+
     // private
 
     static int pathCompare(string left, string right) {
-        var leftFile = Path.GetFileNameWithoutExtension(left);
-        var rightFile = Path.GetFileNameWithoutExtension(right);
+        var leftFile = System.IO.Path.GetFileNameWithoutExtension(left);
+        var rightFile = System.IO.Path.GetFileNameWithoutExtension(right);
         if (int.TryParse(leftFile.Split(' ')[0], out int leftVal) && int.TryParse(rightFile.Split(' ')[0],
             out int rightVal))
         {

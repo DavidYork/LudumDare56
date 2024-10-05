@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,8 @@ public class ChoiceManager: MonoBehaviour {
     [SerializeField] GameObject _contentAreaWide;
     [SerializeField] GameObject _contentAreaShort;
     [SerializeField] GameObject[] _choiceAnchors;
+
+    public Action OnFinished;
 
     public void ClearChoices() {
         foreach (var choice in _choiceButtonsCenter) {
@@ -25,10 +28,15 @@ public class ChoiceManager: MonoBehaviour {
     }
 
     public void RebuildChoices() {
+        if (OnFinished != null) {
+            Debug.Log("Found one");
+        }
         ClearChoices();
 
         var inkState = LD.Ink.CurrentState;
         if (inkState.Message.IsNil()) {
+            OnFinished?.Invoke();
+            OnFinished = null;
             return;
         }
 

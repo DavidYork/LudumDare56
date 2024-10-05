@@ -938,6 +938,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GfxMapNotSelectedColorOverlay: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 1}
   GfxPathTravelSpeed: 0.2
+  GfxResourceGoodColor: {r: 0.20932718, g: 0.9056604, b: 0.44445258, a: 1}
+  GfxResourceBadColor: {r: 1, g: 0.28773582, b: 0.28773582, a: 1}
+  GfxResourceWiggleDuration: 1
 --- !u!114 &360515571 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3770480142788952756, guid: cc754b33e8c0b428ab07aaac304aaabe, type: 3}
@@ -1369,6 +1372,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 400362964, guid: 5771b34dcd1894d8aa8cd50dc8dad599, type: 3}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Encounters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: 'Encounters.Array.data[0]'
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1642,6 +1653,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -3069688444733510968, guid: 5771b34dcd1894d8aa8cd50dc8dad599, type: 3}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Encounters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: 'Encounters.Array.data[0]'
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3008,6 +3027,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 715647872, guid: 5771b34dcd1894d8aa8cd50dc8dad599, type: 3}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Encounters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: 'Encounters.Array.data[0]'
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

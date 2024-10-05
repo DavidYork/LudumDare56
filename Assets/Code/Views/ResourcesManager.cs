@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ResourcesManager: MonoBehaviour {
@@ -16,5 +17,28 @@ public class ResourcesManager: MonoBehaviour {
         _fruit.Set(data.Fruit);
         _stories.Set(data.Stories);
         _trinkets.Set(data.Trinkets);
+    }
+
+    public void Modify(Resource resource, int amount) {
+        Refresh();
+        switch (resource) {
+        case Resource.Coins:
+            _coins.Wiggle(amount);
+            break;
+        case Resource.Dust:
+            _dust.Wiggle(amount);
+            break;
+        case Resource.Fairies:
+            _fairies.Wiggle(amount);
+            break;
+        case Resource.Fruit:
+            _fruit.Wiggle(amount);
+            break;
+        case Resource.Trinkets:
+            _trinkets.Wiggle(amount);
+            break;
+        default:
+            throw new ArgumentException($"Cannot handle {resource}");
+        }
     }
 }

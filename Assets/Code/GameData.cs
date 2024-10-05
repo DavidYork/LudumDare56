@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 [Serializable]
 public class GameData {
@@ -26,4 +27,6 @@ public class GameData {
     public int PlantStories = 0;
     public int MagicStories = 0;
     public int BeautyStories = 0;
+
+    public HashSet<string> VisitedEncounters = new HashSet<string>();
 }

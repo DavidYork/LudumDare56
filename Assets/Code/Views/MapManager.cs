@@ -113,9 +113,7 @@ public class MapManager: MonoBehaviour {
         _currentPath = null;
         _startMoveTime = 0;
 
-        // TODO: Don't put this here. Instead hide all paths and transition to an encounter
-        Game.SetState(GameData.GameState.ChoosingDestination);
-        ShowValidPaths();
+        Game.SetState(GameData.GameState.Encounter);
     }
 
     void Awake() {

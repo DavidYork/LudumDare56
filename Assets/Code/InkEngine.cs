@@ -1,4 +1,5 @@
 using Ink.Runtime;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,6 +47,8 @@ public class InkEngine {
     public InkEngine(string inkJson) {
         _story = new Story(inkJson);
         _story.BindExternalFunction("chooseMapDestination", onChooseMapDestination);
+        _story.BindExternalFunction("gain", (InkList res, int amount) => onGain(res.ToEnum<Resource>(), amount));
+        _story.BindExternalFunction("lose", (InkList res, int amount) => onLose(res.ToEnum<Resource>(), amount));
     }
 
     public void DoChoice(InkChoice command) {
@@ -56,6 +59,17 @@ public class InkEngine {
     public void DoKnot(string knot) {
         _story.ChoosePathString(knot);
         executeUntilNextChoice();
+    }
+
+    public string[] GetAllEncounters() {
+        var rv = new List<string>();
+        var namedContent = _story.mainContentContainer.namedContent;
+        foreach (var knot in namedContent) {
+            if (knot.Value is Container) {
+                rv.Add(knot.Key);
+            }
+        }
+        return rv.ToArray();
     }
 
     // Private
@@ -86,4 +100,32 @@ public class InkEngine {
         Debug.Log("Exploring");
         Game.DoChooseMapDestination();
     }
+
+    void onGain(Resource res, int amount) {
+        switch (res) {
+        case Resource.Coins:
+            LD.Data.Coins += amount;
+            UI.ResourcesMgr.Modify(Resource.Coins, amount);
+            break;
+        case Resource.Dust:
+            LD.Data.Dust += amount;
+            UI.ResourcesMgr.Modify(Resource.Dust, amount);
+            break;
+        case Resource.Fairies:
+            LD.Data.Fairies += amount;
+            UI.ResourcesMgr.Modify(Resource.Fairies, amount);
+            break;
+        case Resource.Fruit:
+            LD.Data.Fruit += amount;
+            UI.ResourcesMgr.Modify(Resource.Fruit, amount);
+            break;
+        case Resource.Trinkets:
+            LD.Data.Trinkets += amount;
+            UI.ResourcesMgr.Modify(Resource.Trinkets, amount);
+            break;
+        default: throw new ArgumentException($"Cannot handle {res}");
+        }
+    }
+
+    void onLose(Resource res, int amount) => onGain(res, -amount);
 }

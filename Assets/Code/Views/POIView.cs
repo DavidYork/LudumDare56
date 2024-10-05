@@ -4,10 +4,16 @@ using UnityEngine.UI;
 
 public class POIView: MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
     [SerializeField] Image _image;
+    [SerializeField] Button _button;
+
+    public Encounter[] Encounters;
 
     public bool Highlighted {
         get => _image.color == Color.white;
-        set => _image.color = value == true ? Color.white : LD.Cfg.GfxMapNotSelectedColorOverlay;
+        set {
+            _image.color = value == true ? Color.white : LD.Cfg.GfxMapNotSelectedColorOverlay;
+            _button.interactable = value;
+        }
     }
 
     public void OnClick() {

@@ -1,5 +1,6 @@
 INCLUDE Globals.ink
 INCLUDE Exploration.ink
+INCLUDE Encounters.ink
 
 //----------------------------------------------------------------------------------------------------------------------
 === Start
