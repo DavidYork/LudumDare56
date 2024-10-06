@@ -3,6 +3,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class POIView: MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
+    public bool SkipThisLocation;
+
     public Encounter[] Encounters;
 
     public int LowAnimals;
@@ -19,6 +21,7 @@ public class POIView: MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
     public string KnotName;
     public string Animals;
     public string Plants;
+    public string BadPlants;
 
     [TextArea(3, 10)]
     public string Description;

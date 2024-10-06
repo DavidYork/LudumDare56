@@ -70,12 +70,18 @@ public static class Game {
     // Private
 
     static void setupAndDoEncounter() {
-        var valids = UI.MapMgr.CurrentPOI.Encounters;
         var poi = UI.MapMgr.CurrentPOI;
 
+        LD.Ink.SetVariable("animalName", poi.Animals);
+        LD.Ink.SetVariable("plantName", poi.Plants);
+        LD.Ink.SetVariable("badPlantName", poi.BadPlants);
+        LD.Ink.SetVariable("locationName", poi.FriendlyName);
+        LD.Ink.SetVariable("locationDescription", poi.Description);
+
+        var valids = poi.Encounters;
         if (valids.Length == 0) {
-            Debug.LogWarning($"No valid encounter types at {poi.FriendlyName}. Configure POI on map.");
-            SetState(GameData.GameState.ChoosingDestination);
+            Debug.LogError($"No valid encounter types at {poi.FriendlyName}. Configure POI on map.");
+            SetState(GameData.GameState.Explore);
             return;
         }
 
@@ -91,8 +97,8 @@ public static class Game {
         }
 
         if (validEncounters.Count == 0) {
-            Debug.LogWarning($"Zero valid encounters found for {poi.name} - add more Ink content or configure on map");
-            SetState(GameData.GameState.ChoosingDestination);
+            Debug.LogError($"Zero valid encounters found for {poi.name} - add more Ink content or configure on map");
+            SetState(GameData.GameState.Explore);
             return;
         }
 
@@ -111,10 +117,6 @@ public static class Game {
             LD.Data.VisitedEncounters.Add(chosenEncounter);
         }
 
-        LD.Ink.SetVariable("animalsName", poi.Animals);
-        LD.Ink.SetVariable("plantsName", poi.Plants);
-        LD.Ink.SetVariable("locationName", poi.FriendlyName);
-        LD.Ink.SetVariable("locationDescription", poi.Description);
         LD.Ink.DoKnot(chosenEncounter);
         UI.ChoiceMgr.OnFinished = () => SetState(GameData.GameState.Explore);
         UI.ChoiceMgr.RebuildChoices();
@@ -122,6 +124,11 @@ public static class Game {
 
     static void setupAndDoExploration() {
         var poi = UI.MapMgr.CurrentPOI;
+        if (poi.SkipThisLocation) {
+            SetState(GameData.GameState.ChoosingDestination);
+            return;
+        }
+
         var locationKnot = $"Location_{poi.KnotName}";
         if (!LD.Ink.KnotExists(locationKnot)) {
             Debug.LogError($"Knot does not exist: {locationKnot}. Write it in Ink.");

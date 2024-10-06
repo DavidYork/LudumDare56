@@ -1153,7 +1153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: bushes
+      value: greenberry tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
@@ -1164,20 +1164,41 @@ PrefabInstance:
       value: Cliff
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: thornweed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowBeauty
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowPlants
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowAnimals
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: A high, magestic cliff rests here at the top of a mountain. Often these
+        are places of great beauty.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -1544,15 +1565,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: mushrooms
+      value: slimy plant
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: bats
+      value: spider
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Cave
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
@@ -1560,15 +1585,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: A massive cavern goes deep into the earth. What secrets does it hold?
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -2087,15 +2116,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: mushrooms
+      value: mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: bats
+      value: bat
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Cave
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
@@ -2103,15 +2136,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: A massive cavern goes deep into the earth. What secrets does it hold?
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -2327,35 +2364,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: trees
+      value: tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: squirrels
+      value: squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: razorfern
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: The oldest tree for as far as the eye can see.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
-      value: Tree
+      value: Ancient Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -2477,31 +2522,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: bushes
+      value: clover
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: eagles
+      value: swallow
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Cliff
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: thicket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowBeauty
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowPlants
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowAnimals
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: A high, magestic cliff rests here at the top of a mountain. Often these
+        are places of great beauty.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -3473,20 +3539,36 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 96072577}
-  - {fileID: 924527717}
   - {fileID: 698008892}
-  - {fileID: 619159478}
-  - {fileID: 678887706}
-  - {fileID: 1396329548}
-  - {fileID: 398270165}
   - {fileID: 572316652}
   - {fileID: 589963832}
   - {fileID: 1513468923}
-  - {fileID: 1663270829}
-  - {fileID: 1270870942}
   - {fileID: 1620130667}
   - {fileID: 788190592}
   - {fileID: 1933661416}
+  - {fileID: 1875295162}
+  - {fileID: 126109012}
+  - {fileID: 386411324}
+  - {fileID: 558678756}
+  - {fileID: 1301000955}
+  - {fileID: 1491839030}
+  - {fileID: 2110327247}
+  - {fileID: 91885617}
+  - {fileID: 924527717}
+  - {fileID: 678887706}
+  - {fileID: 1396329548}
+  - {fileID: 398270165}
+  - {fileID: 1663270829}
+  - {fileID: 1270870942}
+  - {fileID: 2035883997}
+  - {fileID: 794732800}
+  - {fileID: 173398588}
+  - {fileID: 1351919844}
+  - {fileID: 1555399361}
+  - {fileID: 225055951}
+  - {fileID: 1143446923}
+  - {fileID: 444032342}
+  - {fileID: 619159478}
   - {fileID: 1962514414}
   - {fileID: 1664604726}
   - {fileID: 882853697}
@@ -3494,25 +3576,9 @@ RectTransform:
   - {fileID: 1922873527}
   - {fileID: 685765635}
   - {fileID: 218063781}
-  - {fileID: 2035883997}
-  - {fileID: 794732800}
-  - {fileID: 173398588}
-  - {fileID: 1351919844}
-  - {fileID: 1875295162}
-  - {fileID: 126109012}
-  - {fileID: 386411324}
-  - {fileID: 558678756}
-  - {fileID: 1301000955}
   - {fileID: 1218712028}
   - {fileID: 487225819}
   - {fileID: 674796139}
-  - {fileID: 1491839030}
-  - {fileID: 2110327247}
-  - {fileID: 91885617}
-  - {fileID: 1555399361}
-  - {fileID: 225055951}
-  - {fileID: 1143446923}
-  - {fileID: 444032342}
   m_Father: {fileID: 2078904813}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3985,6 +4051,7 @@ MonoBehaviour:
   GfxResourceGoodColor: {r: 0.20932718, g: 0.9056604, b: 0.44445258, a: 1}
   GfxResourceBadColor: {r: 1, g: 0.28773582, b: 0.28773582, a: 1}
   GfxResourceWiggleDuration: 1
+  GfxWhiteTextColor: {r: 0.8820755, g: 0.9908281, b: 1, a: 1}
 --- !u!1 &352257369
 GameObject:
   m_ObjectHideFlags: 0
@@ -4184,15 +4251,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: mushrooms
+      value: mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: bats
+      value: snake
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Cave
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
@@ -4200,15 +4271,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: A massive cavern goes deep into the earth. What secrets does it hold?
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -4334,35 +4409,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: trees
+      value: tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: squirrels
+      value: squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: razorfern
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: The oldest tree for as far as the eye can see.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
-      value: Tree
+      value: Ancient Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -4795,31 +4878,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: bushes
+      value: clover
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: eagles
+      value: swallow
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Cliff
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: thicket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowBeauty
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowPlants
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowAnimals
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: A high, magestic cliff rests here at the top of a mountain. Often these
+        are places of great beauty.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -5340,15 +5444,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: vines
+      value: vine
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: butterflies
+      value: butterflie
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Bridge
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: weed
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
@@ -5369,6 +5477,10 @@ PrefabInstance:
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
       value: Bridge
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: SkipThisLocation
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -6066,15 +6178,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: vines
+      value: vine
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: butterflies
+      value: butterflie
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Bridge
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: weed
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
@@ -6095,6 +6211,10 @@ PrefabInstance:
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
       value: Bridge
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: SkipThisLocation
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -6468,35 +6588,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: trees
+      value: tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: squirrels
+      value: squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: razorfern
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: Before you is the oldest tree for as far as the eye can see. Of all
+        the trees around your fairies decided this was the best one.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
-      value: Tree
+      value: Ancient Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -6693,35 +6822,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: trees
+      value: tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: squirrels
+      value: squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: razorfern
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: The oldest tree for as far as the eye can see.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
-      value: Tree
+      value: Ancient Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -6918,15 +7055,19 @@ PrefabInstance:
       objectReference: {fileID: -3069688444733510968, guid: 5771b34dcd1894d8aa8cd50dc8dad599, type: 3}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: flowers
+      value: flower
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: blue birds
+      value: blue bird
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Well
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: weed
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
@@ -7007,7 +7148,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -80, y: -20}
+  m_SizeDelta: {x: -200, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &639691150
 CanvasRenderer:
@@ -7441,31 +7582,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: bushes
+      value: purple flower
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: eagles
+      value: hawk
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Cliff
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: thicket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowBeauty
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowPlants
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowAnimals
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: A high, magestic cliff rests here at the top of a mountain. Often these
+        are places of great beauty.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -7677,35 +7839,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: trees
+      value: tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: squirrels
+      value: squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: razorfern
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: The oldest tree for as far as the eye can see.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
-      value: Tree
+      value: Ancient Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -7842,35 +8012,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: trees
+      value: tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: squirrels
+      value: squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: razorfern
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: The oldest tree for as far as the eye can see.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
-      value: Tree
+      value: Ancient Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -8063,15 +8241,19 @@ PrefabInstance:
       objectReference: {fileID: -3069688444733510968, guid: 5771b34dcd1894d8aa8cd50dc8dad599, type: 3}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: flowers
+      value: flower
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: blue birds
+      value: blue bird
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Well
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: weed
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
@@ -9184,31 +9366,40 @@ PrefabInstance:
       objectReference: {fileID: 243390672, guid: 5771b34dcd1894d8aa8cd50dc8dad599, type: 3}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: rose bushes
+      value: moonfruit tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: wolves
+      value: deer
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Ruins
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: thicket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: Before you are the old ruins of a long-forgotten civilization. Who knows
+        who they were or what happened to them?
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -9334,15 +9525,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: mushrooms
+      value: mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: bats
+      value: grub
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Cave
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
@@ -9350,15 +9545,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: A massive cavern goes deep into the earth. What secrets does it hold?
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -9669,7 +9868,7 @@ MonoBehaviour:
     It was made
     in 48 hours by David York.
 
-    Tools used: Photoshop, Unity, AvaloniaUI, LogicPro.
+    Tools used: Photoshop, Unity, LogicPro.
 
     No
     AI was used in the creation of this game.'
@@ -10510,35 +10709,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: trees
+      value: tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: squirrels
+      value: squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: razorfern
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: The oldest tree for as far as the eye can see.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
-      value: Tree
+      value: Ancient Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -11134,15 +11341,19 @@ PrefabInstance:
       objectReference: {fileID: -3069688444733510968, guid: 5771b34dcd1894d8aa8cd50dc8dad599, type: 3}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: flowers
+      value: flower
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: blue birds
+      value: blue bird
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Well
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: weed
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
@@ -11704,7 +11915,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1067496371
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13168,35 +13379,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: trees
+      value: tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: squirrels
+      value: squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: razorfern
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: The oldest tree for as far as the eye can see.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
-      value: Tree
+      value: Ancient Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -13308,7 +13527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1128807531
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13862,31 +14081,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: bushes
+      value: purple flower
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: eagles
+      value: hawk
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Cliff
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: thicket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowBeauty
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowPlants
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowAnimals
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: A high, magestic cliff rests here at the top of a mountain. Often these
+        are places of great beauty.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -14233,15 +14473,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: vines
+      value: vine
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: butterflies
+      value: butterflie
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Bridge
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: weed
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
@@ -14262,6 +14506,10 @@ PrefabInstance:
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
       value: Bridge
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: SkipThisLocation
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -14794,31 +15042,40 @@ PrefabInstance:
       objectReference: {fileID: 243390672, guid: 5771b34dcd1894d8aa8cd50dc8dad599, type: 3}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: rose bushes
+      value: bell flower
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: wolves
+      value: frog
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Ruins
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: thicket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: Before you are the old ruins of a long-forgotten civilization. Who knows
+        who they were or what happened to them?
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -15050,15 +15307,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: vines
+      value: vine
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: butterflies
+      value: butterflie
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Bridge
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: weed
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
@@ -15079,6 +15340,10 @@ PrefabInstance:
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
       value: Bridge
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: SkipThisLocation
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -15513,15 +15778,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: mushrooms
+      value: mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: bats
+      value: bat
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Cave
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
@@ -15529,15 +15798,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: A massive cavern goes deep into the earth. What secrets does it hold?
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -15986,35 +16259,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: trees
+      value: tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: squirrels
+      value: squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: razorfern
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: The oldest tree for as far as the eye can see.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
-      value: Tree
+      value: Ancient Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -16080,7 +16361,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -80, y: -20}
+  m_SizeDelta: {x: -200, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1405241690
 MonoBehaviour:
@@ -17327,7 +17608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: bushes
+      value: greenberry tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
@@ -17338,20 +17619,41 @@ PrefabInstance:
       value: Cliff
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: thornweed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowBeauty
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowPlants
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowAnimals
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: A high, magestic cliff rests here at the top of a mountain. Often these
+        are places of great beauty.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -17477,35 +17779,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: trees
+      value: tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: squirrels
+      value: squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: razorfern
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: This majestic tree looms over all the others. Its branches reach out
+        towards the sky as though it beckons for the rain to come to.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
-      value: Tree
+      value: Ancient Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -17987,31 +18298,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: bushes
+      value: purple flower
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: eagles
+      value: hawk
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Cliff
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: thicket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowBeauty
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowPlants
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowAnimals
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: A high, magestic cliff rests here at the top of a mountain. Often these
+        are places of great beauty.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -19004,31 +19336,40 @@ PrefabInstance:
       objectReference: {fileID: -1265123943, guid: 5771b34dcd1894d8aa8cd50dc8dad599, type: 3}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: rose bushes
+      value: rose
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: wolves
+      value: bear
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Ruins
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: thicket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: Before you are the old ruins of a long-forgotten civilization. Who knows
+        who they were or what happened to them?
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -19851,31 +20192,40 @@ PrefabInstance:
       objectReference: {fileID: 715647872, guid: 5771b34dcd1894d8aa8cd50dc8dad599, type: 3}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: rose bushes
+      value: bell flower
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: wolves
+      value: frog
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Ruins
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: thicket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: Before you are the old ruins of a long-forgotten civilization. Who knows
+        who they were or what happened to them?
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -20016,35 +20366,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: trees
+      value: tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: squirrels
+      value: squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: razorfern
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: The oldest tree for as far as the eye can see.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
-      value: Tree
+      value: Ancient Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -21830,15 +22188,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: mushrooms
+      value: mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: bats
+      value: bat
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Cave
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
@@ -21846,15 +22208,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: A massive cavern goes deep into the earth. What secrets does it hold?
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -22821,35 +23187,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: trees
+      value: tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: squirrels
+      value: squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: razorfern
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: The oldest tree for as far as the eye can see.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
-      value: Tree
+      value: Ancient Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -23128,31 +23502,40 @@ PrefabInstance:
       objectReference: {fileID: -355610413, guid: 5771b34dcd1894d8aa8cd50dc8dad599, type: 3}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: rose bushes
+      value: rainbow flower
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: wolves
+      value: rat
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Ruins
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: thicket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: Before you are the old ruins of a long-forgotten civilization. Who knows
+        who they were or what happened to them?
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -23432,35 +23815,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: trees
+      value: tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: squirrels
+      value: squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: razorfern
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: The oldest tree for as far as the eye can see.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
-      value: Tree
+      value: Ancient Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size
@@ -24292,15 +24683,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: mushrooms
+      value: mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
-      value: bats
+      value: salamander
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: KnotName
       value: Cave
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
@@ -24308,15 +24703,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: A massive cavern goes deep into the earth. What secrets does it hold?
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName
@@ -24831,7 +25230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Plants
-      value: bushes
+      value: greenberry tree
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Animals
@@ -24842,20 +25241,41 @@ PrefabInstance:
       value: Cliff
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: BadPlants
+      value: thornweed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowBeauty
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowPlants
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighBeauty
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighPlants
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: LowAnimals
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: A high, magestic cliff rests here at the top of a mountain. Often these
+        are places of great beauty.
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: FriendlyName

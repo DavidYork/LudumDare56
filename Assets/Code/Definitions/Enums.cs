@@ -6,6 +6,7 @@ public enum Encounter {
     Cave,
     Cliff,
     Bridge,
+    General,
 }
 
 public enum LocAttributes {

@@ -35,14 +35,15 @@ public class ResourceView: MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             return;
         }
 
+        var white = LD.Cfg.GfxWhiteTextColor;
         var duration = LD.Cfg.GfxResourceWiggleDuration;
         if (Time.time >= _startWiggleTimestamp + duration) {
             _startWiggleTimestamp = 0;
-            _value.color = Color.white;
+            _value.color = white;
             return;
         }
 
         var elapsed = Time.time - _startWiggleTimestamp;
-        _value.color = Color.Lerp(_wiggleColor, Color.white, elapsed / duration);
+        _value.color = Color.Lerp(_wiggleColor, white, elapsed / duration);
     }
 }
