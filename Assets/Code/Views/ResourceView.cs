@@ -7,7 +7,7 @@ public class ResourceView: MonoBehaviour {
     float _startWiggleTimestamp;
     Color _wiggleColor;
 
-    public void Set(int val) => _value.text = $"{val}";
+    public void Set(int val) => _value.text = $"{name}:\n{val}";
 
     public void Wiggle(int amount) {
         if (amount == 0) {

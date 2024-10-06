@@ -29,7 +29,7 @@ public readonly struct InkEngineState {
     public InkEngineState(string textBody, Story story, string[] metadata,
         Dictionary<string, string> tags)
     {
-        Message = textBody;
+        Message = textBody.Replace("$t", "\t").TrimStart();
         Choices = story.currentChoices.ConvertAll(s => new InkChoice(s)).ToArray();
         ImageName = null;
         Tags = tags;
@@ -75,7 +75,11 @@ public class InkEngine {
     }
 
     public int GetVariable(string name) => (int)_story.variablesState[name];
-    public void SetVariable(string name, int value) => _story.variablesState[name] = value;
+
+    public void SetVariable(string name, int value) {
+        Debug.Log($"Setting {name} to {value}");
+        _story.variablesState[name] = value;
+    }
 
     public bool KnotExists(string knotName) => _story.KnotContainerWithName(knotName) != null;
 

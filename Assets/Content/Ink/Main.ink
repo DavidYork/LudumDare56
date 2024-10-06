@@ -34,3 +34,7 @@ LIST Res                            =   Coins,
     }
     ~ lose(resource, amount)
     ~ return amount
+
+=== function Score(amount, multiplier)
+    ~ score += (amount * multiplier)
+    ~ return "{amount} x {multiplier} = {amount * multiplier}"

@@ -73,11 +73,17 @@ public class ChoiceManager: MonoBehaviour {
         }
 
         var targetContent = showIllustration ? _contentAreaShort : _contentAreaWide;
-        targetContent.SetActive(true);
+        if (!_massiveTextWindow.activeSelf) {
+            targetContent.SetActive(true);
+        }
     }
 
     public void ShowMassiveTextWindow(bool visible) {
         _massiveTextWindow.SetActive(visible);
+        if (visible) {
+            _contentAreaShort.gameObject.SetActive(false);
+            _contentAreaWide.gameObject.SetActive(false);
+        }
     }
 
     // Private
