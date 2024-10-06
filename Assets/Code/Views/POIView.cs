@@ -15,6 +15,13 @@ public class POIView: MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
     public int HighMagic = 3;
     public int HighBeauty = 3;
 
+    public string FriendlyName;
+    public string Animals;
+    public string Plants;
+
+    [TextArea(3, 10)]
+    public string Description;
+
     [SerializeField] Image _image;
     [SerializeField] Button _button;
 

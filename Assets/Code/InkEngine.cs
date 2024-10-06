@@ -81,6 +81,11 @@ public class InkEngine {
         _story.variablesState[name] = value;
     }
 
+    public void SetVariable(string name, string value) {
+        Debug.Log($"Setting {name} to {value}");
+        _story.variablesState[name] = value;
+    }
+
     public bool KnotExists(string knotName) => _story.KnotContainerWithName(knotName) != null;
 
     // Private

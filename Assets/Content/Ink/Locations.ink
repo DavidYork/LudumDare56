@@ -8,13 +8,13 @@ VAR beauty = 0
 // Names of things used for settling
 VAR animalsName = "animals"
 VAR plantsName = "plants"
+VAR locationName = "location"
+VAR locationDescription = ""
 
 //----------------------------------------------------------------------------------------------------------------------
 === Location_Well
-    ~ animalsName = "blue birds"
-    ~ plantsName = "plants"
+    {locationDescription}
 
-    Hello. This is the well.
     <- Show_Animals
     <- Show_Plants
     <- Show_Magic
@@ -23,7 +23,7 @@ VAR plantsName = "plants"
     - -> DONE
 
 = Show_Animals
-    There are many little blue birds that like to visit the well. <>
+    There are many little {animalsName} that like to visit the well. <>
     { animals:
     - 0: They are mean and cruel and snap at your fairies!
     - 1: They don't like you very much and sometimes chase your fairies away.

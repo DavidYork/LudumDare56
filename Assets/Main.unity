@@ -2201,6 +2201,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -3069688444733510968, guid: 5771b34dcd1894d8aa8cd50dc8dad599, type: 3}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Plants
+      value: flowers
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Animals
+      value: blue birds
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighMagic
       value: 2
       objectReference: {fileID: 0}
@@ -2213,8 +2221,18 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: Description
+      value: An old, abandoned well lies before you its pail and rope long gone.
+        Who used this well? Time has probably forgotten. There is no other evidence
+        of civilization nearby.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: HighAnimals
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
+      propertyPath: FriendlyName
+      value: Wishing Well
       objectReference: {fileID: 0}
     - target: {fileID: 7907031085855392271, guid: 0c2b4f4de4d4146b180bdd58d31eb08d, type: 3}
       propertyPath: Encounters.Array.size

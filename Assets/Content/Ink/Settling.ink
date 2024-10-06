@@ -9,7 +9,7 @@ VAR score = 0
     + [Move on] -> DONE
 
 = MaybeSettleHere
-    Settling is a big decision! If you decide this is where the colony should live it will end the game.
+    Settling is a big decision!\nIf you decide this is where the colony should live it will end the game.
 
     + [Settle here (ends the game)] -> DoSettle
     + [Nevermind, move on] -> DONE
@@ -26,7 +26,7 @@ VAR score = 0
 
     { animals:
         - 0: Violent conflicts with the {animalsName} kill {RandLoss(Res.Fairies, 500, 1000)} fairies!
-        - 1: Tensions grow with the {animalsName} until a bloody conflict insues off. The {animalsName} are driven away but {RandLoss(Res.Fairies, 100, 499)} fairies perish in the conflict.
+        - 1: Tensions grow with the {animalsName} until a bloody conflict ensues. The {animalsName} are driven away but {RandLoss(Res.Fairies, 100, 499)} fairies perish in the conflict.
         - 2: Unable to make friends with the {animalsName} occasional fights break out killing {RandLoss(Res.Fairies, 25, 99)} fairies decide the area isn't attractive enough for them and leave the colony.
         - else: Many fairies make long-lasting friendships with the {animalsName}.
     }
@@ -91,7 +91,7 @@ VAR score = 0
         - get(Res.Fruit) < 40:
             Your very small feytree orchard means your colony is mostly focused on its basic needs.
         - get(Res.Fruit) < 60:
-            Your limited feytree orchard means there is enough food to go around but none is every traded and some fairies get more than others.
+            Your limited feytree orchard means there is enough food to go around but none is ever traded and some fairies get more than others.
         - get(Res.Fruit) < 80:
             Your ample feytree orchard means all eat well.
         - get(Res.Fruit) <= 100:

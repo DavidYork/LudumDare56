@@ -60,9 +60,7 @@ public static class Game {
         case GameData.GameState.Settling:
             break;
         case GameData.GameState.Gameover:
-            // TODO: Go back to intro state
-            // Game.DoStartIntro();
-            DoStartNewGame(LD.Boots.InkCompiledJson.ToString());
+            Game.DoStartIntro();
             break;
         default:
             throw new System.Exception($"Cannot understand {newState}");
@@ -113,6 +111,10 @@ public static class Game {
             LD.Data.VisitedEncounters.Add(chosenEncounter);
         }
 
+        LD.Ink.SetVariable("animalsName", poi.Animals);
+        LD.Ink.SetVariable("plantsName", poi.Plants);
+        LD.Ink.SetVariable("locationName", poi.FriendlyName);
+        LD.Ink.SetVariable("locationDescription", poi.Description);
         LD.Ink.DoKnot(chosenEncounter);
         UI.ChoiceMgr.OnFinished = () => SetState(GameData.GameState.Explore);
         UI.ChoiceMgr.RebuildChoices();
