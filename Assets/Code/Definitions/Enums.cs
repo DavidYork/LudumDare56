@@ -14,5 +14,6 @@ public enum Resource {
     Dust,
     Fairies,
     Fruit,
-    Trinkets
+    Trinkets,
+    Stories
 }

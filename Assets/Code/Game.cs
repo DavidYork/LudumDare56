@@ -30,6 +30,7 @@ public static class Game {
         LD.Ink.DoKnot("Start");
         UI.ChoiceMgr.ShowMassiveTextWindow(false);
         UI.ChoiceMgr.RebuildChoices();
+        LD.UI.HideAll();
         LD.UI.ShowGameplay();
     }
 

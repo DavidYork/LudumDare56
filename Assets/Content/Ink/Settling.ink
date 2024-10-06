@@ -103,7 +103,7 @@ VAR score = 0
 
     {
         - epicness < 2:
-            The dream of this fairy colony is short lived. The hope for a stable, long-lasting new home fails and before too long the colony completely disbands.
+            The dream of this fairy colony is short lived. The attempt to build a colony failed and what fairies were left quickly became disillusioned with their fate. The hope for a stable, long-lasting new home fails and before too long the colony completely disbands.
             ~ RandLoss(Res.Fairies, 10000, 99999)
         - epicness < 5:
             The colony mostly keeps to itself. The world never learns about the colony other than a few lucky fey that happen upon it. The colony survives but never truly flourishes and the fairies always dream of the better life they had to leave behind. Some art and music is created by the colony but it's only enjoyed by few.

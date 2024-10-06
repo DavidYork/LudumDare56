@@ -1,11 +1,21 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class ResourceView: MonoBehaviour {
+public class ResourceView: MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
     [SerializeField] TextMeshProUGUI _value;
+    [SerializeField] Resource _resource;
 
     float _startWiggleTimestamp;
     Color _wiggleColor;
+
+    public void OnPointerEnter(PointerEventData eventData) {
+        UI.Tooltip.Show(_resource);
+    }
+
+    public void OnPointerExit(PointerEventData eventData) {
+        UI.Tooltip.Hide();
+    }
 
     public void Set(int val) => _value.text = $"{name}:\n{val}";
 

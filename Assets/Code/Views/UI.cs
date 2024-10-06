@@ -8,11 +8,13 @@ public class UI: MonoBehaviour {
     public static ChoiceManager ChoiceMgr { get; private set; }
     public static ResourcesManager ResourcesMgr { get; private set; }
     public static MapManager MapMgr { get; private set; }
+    public static Tooltip Tooltip { get; private set; }
 
     public void Awake() {
         ChoiceMgr = GameObject.FindFirstObjectByType<ChoiceManager>();
         ResourcesMgr = GameObject.FindFirstObjectByType<ResourcesManager>();
         MapMgr = GameObject.FindFirstObjectByType<MapManager>();
+        Tooltip = GameObject.FindFirstObjectByType<Tooltip>();
     }
 
     public void ShowIntro() => _introAnchor.SetActive(true);
@@ -28,5 +30,6 @@ public class UI: MonoBehaviour {
         _gameplayAnchor.SetActive(false);
         _introAnchor.SetActive(false);
         _preludeAnchor.SetActive(false);
+        Tooltip.Hide();
     }
 }

@@ -12,10 +12,12 @@ public class ChoiceManager: MonoBehaviour {
     [SerializeField] GameObject _contentAreaShort;
     [SerializeField] GameObject _massiveTextWindow;
     [SerializeField] GameObject[] _choiceAnchors;
+    [SerializeField] GameObject _hideMapOverlay;
 
     public Action OnFinished;
 
     public void ClearChoices() {
+        _hideMapOverlay.SetActive(false);
         foreach (var choice in _choiceButtonsCenter) {
             choice.gameObject.SetActive(false);
         }
@@ -45,6 +47,7 @@ public class ChoiceManager: MonoBehaviour {
             return;
         }
 
+        _hideMapOverlay.SetActive(true);
         var choices = inkState.Choices;
         var choiceButtons = choices.Length > _choiceButtonsCenter.Length
             ? _choiceButtonsLeftAndRight : _choiceButtonsCenter;
@@ -79,6 +82,7 @@ public class ChoiceManager: MonoBehaviour {
     }
 
     public void ShowMassiveTextWindow(bool visible) {
+        _hideMapOverlay.SetActive(true);
         _massiveTextWindow.SetActive(visible);
         if (visible) {
             _contentAreaShort.gameObject.SetActive(false);
