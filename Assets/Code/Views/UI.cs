@@ -11,10 +11,10 @@ public class UI: MonoBehaviour {
     public static Tooltip Tooltip { get; private set; }
 
     public void Awake() {
-        ChoiceMgr = GameObject.FindFirstObjectByType<ChoiceManager>();
-        ResourcesMgr = GameObject.FindFirstObjectByType<ResourcesManager>();
-        MapMgr = GameObject.FindFirstObjectByType<MapManager>();
-        Tooltip = GameObject.FindFirstObjectByType<Tooltip>();
+        ChoiceMgr = GameObject.FindFirstObjectByType<ChoiceManager>(FindObjectsInactive.Include);
+        ResourcesMgr = GameObject.FindFirstObjectByType<ResourcesManager>(FindObjectsInactive.Include);
+        MapMgr = GameObject.FindFirstObjectByType<MapManager>(FindObjectsInactive.Include);
+        Tooltip = GameObject.FindFirstObjectByType<Tooltip>(FindObjectsInactive.Include);
     }
 
     public void ShowIntro() => _introAnchor.SetActive(true);

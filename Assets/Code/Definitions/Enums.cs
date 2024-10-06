@@ -1,5 +1,11 @@
 public enum Encounter {
-    Uninitialized, Well, Tree, Chest,
+    Uninitialized,
+    Well,
+    Tree,
+    Ruins,
+    Cave,
+    Cliff,
+    Bridge,
 }
 
 public enum LocAttributes {

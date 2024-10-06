@@ -16,6 +16,7 @@ public class POIView: MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
     public int HighBeauty = 3;
 
     public string FriendlyName;
+    public string KnotName;
     public string Animals;
     public string Plants;
 

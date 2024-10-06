@@ -68,7 +68,7 @@ public class MapManager: MonoBehaviour {
         _currentTarget = poi;
 
         _pointsToWalkThrough.Clear();
-        _pointsToWalkThrough.AddRange(path.PathDots);
+        _pointsToWalkThrough.AddRange(path._pathDots);
         if (poi == path.Start) {
             _pointsToWalkThrough.Reverse();
         }

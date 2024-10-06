@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 120
+  spritePixelsToUnits: 240
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POI tree
+      name: POI old solo tree
       rect:
         serializedVersion: 2
         x: 1974
@@ -202,7 +202,7 @@ TextureImporter:
         width: 200
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,6 +210,321 @@ TextureImporter:
       bones: []
       spriteID: 9ff29fac6cf9349d389ce7349124ed2d
       internalID: -799462995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POI cave
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1142
+        width: 145
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f644bc9f81c44c3b5a76096a8d0279
+      internalID: -263407523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POIs_0
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1540
+        width: 280
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8823e4261f494dab9362abe896f6be3
+      internalID: -781195042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POIs_1
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1311
+        width: 242
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1163a7310a3491ea704abb4da269c5
+      internalID: 1238103291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POIs_2
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1415
+        width: 243
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab1f353e4c4d46e8a020e1436f50ac9
+      internalID: -32527861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POIs_3
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 854
+        width: 215
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd1e1096e3b542deb79d4197cf7b6ca
+      internalID: -355610413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POIs_4
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 576
+        width: 258
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d8deab78f3a44ff9a84c5dd43ff575
+      internalID: -1265123943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POIs_5
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 695
+        width: 254
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7e98150a26b42628d3d4a5677faac9
+      internalID: 243390672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POI tree
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 813
+        width: 159
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171c3cb253efa4e5cab91e8e7b44d89d
+      internalID: -822801341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POI bridge
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 1346
+        width: 137
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fac9b104b01344178784aaef70f6de2
+      internalID: 95805694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POIs_6
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 1653
+        width: 160
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193b99fe9070e40bbbb99b219994d1c2
+      internalID: 1349845610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POIs_7
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 1724
+        width: 186
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc14e773eed974b1b84beee7e2665cad
+      internalID: 1369839680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POIs_8
+      rect:
+        serializedVersion: 2
+        x: 2322
+        y: 1452
+        width: 246
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24c2a92605cd4eafb5b90f2cbd201bb
+      internalID: -521444834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POIs_9
+      rect:
+        serializedVersion: 2
+        x: 2615
+        y: 1478
+        width: 194
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc335ff9b10b45769db155fbc3e75d5
+      internalID: 1413574362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POIs_10
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 1141
+        width: 134
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd20e68a89874edbb43023a25bb3287
+      internalID: -1535988594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POIs_11
+      rect:
+        serializedVersion: 2
+        x: 3484
+        y: 1376
+        width: 180
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964ed59ed024c433fa1bbdac3c19ca98
+      internalID: -559530968
       vertices: []
       indices: 
       edges: []
@@ -226,9 +541,24 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Colony: -799462995
+      POI bridge: 95805694
+      POI cave: -263407523
       POI chest: 715647872
-      POI tree: 400362964
+      POI old solo tree: 400362964
+      POI tree: -822801341
       POI well: -3069688444733510968
+      POIs_0: -781195042
+      POIs_1: 1238103291
+      POIs_10: -1535988594
+      POIs_11: -559530968
+      POIs_2: -32527861
+      POIs_3: -355610413
+      POIs_4: -1265123943
+      POIs_5: 243390672
+      POIs_6: 1349845610
+      POIs_7: 1369839680
+      POIs_8: -521444834
+      POIs_9: 1413574362
       Path dot: -2137245281
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

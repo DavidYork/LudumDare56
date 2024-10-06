@@ -74,7 +74,7 @@ public static class Game {
         var poi = UI.MapMgr.CurrentPOI;
 
         if (valids.Length == 0) {
-            Debug.LogError($"No valid encounter types at {poi.name}. Configure POI on map.");
+            Debug.LogWarning($"No valid encounter types at {poi.FriendlyName}. Configure POI on map.");
             SetState(GameData.GameState.ChoosingDestination);
             return;
         }
@@ -91,7 +91,7 @@ public static class Game {
         }
 
         if (validEncounters.Count == 0) {
-            Debug.LogError($"Zero valid encounters found for {poi.name} - add more Ink content or configure on map");
+            Debug.LogWarning($"Zero valid encounters found for {poi.name} - add more Ink content or configure on map");
             SetState(GameData.GameState.ChoosingDestination);
             return;
         }
@@ -122,7 +122,7 @@ public static class Game {
 
     static void setupAndDoExploration() {
         var poi = UI.MapMgr.CurrentPOI;
-        var locationKnot = $"Location_{poi.name}";
+        var locationKnot = $"Location_{poi.KnotName}";
         if (!LD.Ink.KnotExists(locationKnot)) {
             Debug.LogError($"Knot does not exist: {locationKnot}. Write it in Ink.");
             SetState(GameData.GameState.ChoosingDestination);
