@@ -19,9 +19,23 @@ LIST Res                            =   Coins,
 
 //----------------------------------------------------------------------------------------------------------------------
 === Start
-    You have arrived in the new world. What do you do?
+    You are the leader of the fairy people.
+    You and 2000 fairies have fled your homes as large, clumsy beings cut down the forests and destroyed your land.
 
-    + [Onward!]
+    + [Continue]
+    -
+
+    You have brought with you meager resources that can be used to build a new colony in this new, unknown land.
+    Hover the mouse over the resources (top of the screen) to learn more about them.
+
+    + [Continue]
+    -
+
+    Remember! Fairies like to collect stories, so if you find those that can tell you stories about this new land you will find an easier time making a home here.
+
+    Good luck!
+
+    + [Onward to a new home!]
         ~ chooseMapDestination()
         -> DONE
 

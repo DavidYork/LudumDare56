@@ -17,7 +17,7 @@ public class ResourceView: MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         UI.Tooltip.Hide();
     }
 
-    public void Set(int val) => _value.text = $"{name}:\n{val}";
+    public void Set(int val) => _value.text = $"{name}\n{val}";
 
     public void Wiggle(int amount) {
         if (amount == 0) {
