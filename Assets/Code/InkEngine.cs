@@ -47,10 +47,10 @@ public class InkEngine {
     public InkEngine(string inkJson) {
         _story = new Story(inkJson);
         _story.BindExternalFunction("chooseMapDestination", onChooseMapDestination);
-        _story.BindExternalFunction("doSettleAndEndGame", onDoSettleAndEndGame);
         _story.BindExternalFunction("get", (InkList res) => onGet(res.ToEnum<Resource>()));
         _story.BindExternalFunction("gain", (InkList res, int amount) => onGain(res.ToEnum<Resource>(), amount));
         _story.BindExternalFunction("lose", (InkList res, int amount) => onLose(res.ToEnum<Resource>(), amount));
+        _story.BindExternalFunction("showSummaryAndEndGame", onShowSummaryAndEndGame);
     }
 
     public void DoChoice(InkChoice command) {
@@ -105,7 +105,7 @@ public class InkEngine {
 
     void onChooseMapDestination() => Game.DoChooseMapDestination();
 
-    void onDoSettleAndEndGame() => Game.DoSettleAndEndGame();
+    void onShowSummaryAndEndGame() => Game.DoShowSummaryAndEndGame();
 
     int onGet(Resource res) => (res) switch {
         Resource.Coins => LD.Data.Coins,

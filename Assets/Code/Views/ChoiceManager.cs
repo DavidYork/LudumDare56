@@ -10,6 +10,7 @@ public class ChoiceManager: MonoBehaviour {
     [SerializeField] TextMeshProUGUI[] _contentBody;
     [SerializeField] GameObject _contentAreaWide;
     [SerializeField] GameObject _contentAreaShort;
+    [SerializeField] GameObject _massiveTextWindow;
     [SerializeField] GameObject[] _choiceAnchors;
 
     public Action OnFinished;
@@ -25,6 +26,12 @@ public class ChoiceManager: MonoBehaviour {
         _contentAreaWide.gameObject.SetActive(false);
         _contentAreaShort.gameObject.SetActive(false);
         _illustration.gameObject.SetActive(false);
+    }
+
+    public void OnTheEnd() {
+        var callback = OnFinished;
+        OnFinished = null;
+        callback?.Invoke();
     }
 
     public void RebuildChoices() {
@@ -67,6 +74,10 @@ public class ChoiceManager: MonoBehaviour {
 
         var targetContent = showIllustration ? _contentAreaShort : _contentAreaWide;
         targetContent.SetActive(true);
+    }
+
+    public void ShowMassiveTextWindow(bool visible) {
+        _massiveTextWindow.SetActive(visible);
     }
 
     // Private

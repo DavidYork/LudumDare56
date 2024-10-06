@@ -13,9 +13,9 @@ public static class Game {
         UI.ChoiceMgr.RebuildChoices();
     }
 
-    public static void DoSettleAndEndGame() {
-        Debug.LogWarning("TODO: Settle and end game here");
-        UI.ChoiceMgr.OnFinished = null;
+    public static void DoShowSummaryAndEndGame() {
+        UI.ChoiceMgr.OnFinished = () => SetState(GameData.GameState.Gameover);
+        UI.ChoiceMgr.ShowMassiveTextWindow(true);
         SetState(GameData.GameState.Settling);
     }
 
@@ -28,6 +28,7 @@ public static class Game {
         UI.ResourcesMgr.Refresh();
         UI.MapMgr.OnStartNewGame();
         LD.Ink.DoKnot("Start");
+        UI.ChoiceMgr.ShowMassiveTextWindow(false);
         UI.ChoiceMgr.RebuildChoices();
         LD.UI.ShowGameplay();
     }
@@ -37,6 +38,7 @@ public static class Game {
     }
 
     public static void SetState(GameData.GameState newState) {
+        Debug.Log($"State changed from {LD.Data.State} to {newState} ");
         LD.Data.State = newState;
 
         switch (newState) {
@@ -57,6 +59,9 @@ public static class Game {
         case GameData.GameState.Settling:
             break;
         case GameData.GameState.Gameover:
+            // TODO: Go back to intro state
+            // Game.DoStartIntro();
+            DoStartNewGame(LD.Boots.InkCompiledJson.ToString());
             break;
         default:
             throw new System.Exception($"Cannot understand {newState}");

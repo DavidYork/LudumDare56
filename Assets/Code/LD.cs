@@ -9,6 +9,7 @@ public static class LD {
     public static AudioManager Audio;
     public static UI UI;
     public static Config Cfg;
+    public static Bootstrapper Boots;
 
     public static void Initialize() {
         Audio = GameObject.FindFirstObjectByType<AudioManager>();
@@ -18,6 +19,7 @@ public static class LD {
         }
         UI = GameObject.FindFirstObjectByType<UI>();
         Cfg = GameObject.FindFirstObjectByType<Config>();
+        Boots = GameObject.FindFirstObjectByType<Bootstrapper>();
     }
 
     public static void OnStartNewGame(string inkJson) {

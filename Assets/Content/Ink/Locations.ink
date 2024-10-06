@@ -5,8 +5,15 @@ VAR plants = 0
 VAR magic = 0
 VAR beauty = 0
 
+// Names of things used for settling
+VAR animalsName = "animals"
+VAR plantsName = "plants"
+
 //----------------------------------------------------------------------------------------------------------------------
 === Location_Well
+    ~ animalsName = "blue birds"
+    ~ plantsName = "plants"
+
     Hello. This is the well.
     <- Show_Animals
     <- Show_Plants
@@ -29,9 +36,15 @@ VAR beauty = 0
 = Show_Plants
     { plants:
     - 0: The only plants are some nasty weeds and smelly well algae.
+        ~ plantsName = "weeds"
     - 1: The only plants are just a bunch of weeds and a few small flowers.
-    - 2: The well is surrounded by green grass and a few nice flowers.
-    - 3: There are lovely colorful flowers around the well.
+        ~ plantsName = "weeds"
+    - 2:
+        The well is surrounded by green grass and a few nice flowers.
+        ~ plantsName = "flowers"
+    - 3:
+        There are lovely colorful flowers around the well.
+        ~ plantsName = "flowers"
     - else: The well is surrounded by beautiful purple and pink dream lilies and your fairies love them!
     }
     -> DONE
@@ -50,38 +63,8 @@ VAR beauty = 0
     { beauty:
     - 0: The well is ugly and its site displeases your fairies.
     - 1: The well isn't a complete eyesore but it looks very boring.
-    - 2: The well is fine but flying over it you have a wonderful view of the surrounding area.
+    - 2: The well looks fine but flying over it you have a wonderful view of the surrounding area.
     - 3: The well has a view of beautiful mountains and a wonderful forest in the distance.
     - else: Your fairies love the beauty of the surrounding area and keep talking about it excitedly.
     }
     -> DONE
-
-//----------------------------------------------------------------------------------------------------------------------
-=== SettlementOptions
-    + [Consider settling here]
-        -> MaybeSettleHere
-    + [Move on] -> DONE
-
-= MaybeSettleHere
-    Settling is a big decision! If you decide this is where the colony should live it will end the game.
-
-    Before committing to this location you can use a coin in the ritual of clairvoyance to see into the future of the colony.
-
-    - { get(Res.Coins) <= 0: Unfortunately you don't have any coins left. }
-
-    -
-
-    + { get(Res.Coins) <= 0 } [Settle here (ends the game)] -> DoSettle
-    + { get(Res.Coins) > 0 } [Perform the ritual (-1 coin)] -> DoRitual
-    + [Nevermind, move on] -> DONE
-
-= DoRitual
-    TODO: The ritual happens here.
-    ~ lose(Res.Coins, 1)
-    + [Settle here (ends the game)] -> DoSettle
-    + [Nevermind, move on] -> DONE
-
-= DoSettle
-    TODO: The settling and game ending happens here.
-    ~ doSettleAndEndGame()
-    + [Okay] -> DONE

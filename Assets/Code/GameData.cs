@@ -18,7 +18,7 @@ public class GameData {
     public int TimePassed = 0;
     public int Coins = 10;
     public int Dust = 100;
-    public int Fairies = 100;
+    public int Fairies = 2000;
     public int Fruit = 100;
     public int Stories => AnimalStories + PlantStories + MagicStories + BeautyStories;
     public int Trinkets = 100;

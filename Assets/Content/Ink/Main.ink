@@ -1,7 +1,21 @@
-INCLUDE Globals.ink
-INCLUDE Exploration.ink
 INCLUDE Encounters.ink
+INCLUDE Exploration.ink
 INCLUDE Locations.ink
+INCLUDE Settling.ink
+
+//- Interop ------------------------------------------------------------------------------------------------------------
+EXTERNAL chooseMapDestination       ()
+EXTERNAL showSummaryAndEndGame      ()
+EXTERNAL gain                       (resource, amount)
+EXTERNAL get                        (resource)
+EXTERNAL lose                       (resource, amount)
+
+//- Lists --------------------------------------------------------------------------------------------------------------
+LIST Res                            =   Coins,
+                                        Dust,
+                                        Fairies,
+                                        Fruit,
+                                        Trinkets
 
 //----------------------------------------------------------------------------------------------------------------------
 === Start
@@ -10,3 +24,13 @@ INCLUDE Locations.ink
     + [Onward!]
         ~ chooseMapDestination()
         -> DONE
+
+//- Functions ----------------------------------------------------------------------------------------------------------
+=== function RandLoss(resource, min, max)
+    ~ temp amount = RANDOM(min, max)
+    ~ temp startAmount = get(resource)
+    { amount > startAmount:
+        ~ amount = startAmount
+    }
+    ~ lose(resource, amount)
+    ~ return amount
