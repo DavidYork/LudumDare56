@@ -49,6 +49,7 @@ public class InkEngine {
         _story.BindExternalFunction("chooseMapDestination", onChooseMapDestination);
         _story.BindExternalFunction("get", (InkList res) => onGet(res.ToEnum<Resource>()));
         _story.BindExternalFunction("gain", (InkList res, int amount) => onGain(res.ToEnum<Resource>(), amount));
+        _story.BindExternalFunction("gainStory", (InkList res) => onGainStory(res.ToEnum<LocAttributes>()));
         _story.BindExternalFunction("lose", (InkList res, int amount) => onLose(res.ToEnum<Resource>(), amount));
         _story.BindExternalFunction("showSummaryAndEndGame", onShowSummaryAndEndGame);
     }
@@ -149,6 +150,18 @@ public class InkEngine {
             break;
         default: throw new ArgumentException($"Cannot handle {res}");
         }
+    }
+
+    void onGainStory(LocAttributes storyType) {
+        switch (storyType) {
+        case LocAttributes.Animals: LD.Data.AnimalStories++; break;
+        case LocAttributes.Plants: LD.Data.PlantStories++; break;
+        case LocAttributes.Magic: LD.Data.MagicStories++; break;
+        case LocAttributes.Beauty: LD.Data.BeautyStories++; break;
+        default: throw new ArgumentException($"Cannot handle {storyType}");
+        }
+
+        UI.ResourcesMgr.Modify(Resource.Stories, 1);
     }
 
     void onLose(Resource res, int amount) => onGain(res, -amount);

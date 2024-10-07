@@ -37,6 +37,9 @@ public class ResourcesManager: MonoBehaviour {
         case Resource.Trinkets:
             _trinkets.Wiggle(amount);
             break;
+        case Resource.Stories:
+            _stories.Wiggle(amount);
+            break;
         default:
             throw new ArgumentException($"Cannot handle {resource}");
         }

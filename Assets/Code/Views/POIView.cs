@@ -23,7 +23,10 @@ public class POIView: MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
     public string Plants;
     public string BadPlants;
 
-    [TextArea(3, 10)]
+    [TextArea(3, 10), Tooltip("This is the description given at the beginning of the encounter.")]
+    public string PreDescription;
+
+    [TextArea(3, 10), Tooltip("This is the description given at the beginning of the location exploration.")]
     public string Description;
 
     [SerializeField] Image _image;

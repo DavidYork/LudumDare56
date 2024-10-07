@@ -10,10 +10,10 @@ public enum Encounter {
 }
 
 public enum LocAttributes {
-    animals,
-    plants,
-    magic,
-    beauty
+    Animals,
+    Plants,
+    Magic,
+    Beauty
 }
 
 public enum Resource {

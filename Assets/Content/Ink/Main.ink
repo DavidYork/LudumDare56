@@ -2,11 +2,13 @@ INCLUDE Encounters.ink
 INCLUDE Exploration.ink
 INCLUDE Locations.ink
 INCLUDE Settling.ink
+INCLUDE Stories.ink
 
 //- Interop ------------------------------------------------------------------------------------------------------------
 EXTERNAL chooseMapDestination       ()
 EXTERNAL showSummaryAndEndGame      ()
 EXTERNAL gain                       (resource, amount)
+EXTERNAL gainStory                  (story)
 EXTERNAL get                        (resource)
 EXTERNAL lose                       (resource, amount)
 
@@ -16,6 +18,11 @@ LIST Res                            =   Coins,
                                         Fairies,
                                         Fruit,
                                         Trinkets
+
+LIST Story                          =   Animal,
+                                        Plant,
+                                        Magic,
+                                        Beauty
 
 //----------------------------------------------------------------------------------------------------------------------
 === Start
@@ -47,6 +54,11 @@ LIST Res                            =   Coins,
         ~ amount = startAmount
     }
     ~ lose(resource, amount)
+    ~ return amount
+
+=== function RandGain(resource, min, max)
+    ~ temp amount = RANDOM(min, max)
+    ~ gain(resource, amount)
     ~ return amount
 
 === function Score(amount, multiplier)

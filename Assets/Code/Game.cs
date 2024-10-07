@@ -87,6 +87,7 @@ public static class Game {
 
         var allEncounters = LD.Ink.GetAllEncounters();
         var validEncounters = new List<string>();
+
         foreach (var valid in valids) {
             foreach (var encounter in allEncounters) {
                 var prefix = $"Encounter_{valid}_";
@@ -117,6 +118,11 @@ public static class Game {
             LD.Data.VisitedEncounters.Add(chosenEncounter);
         }
 
+        var strippedEncounter = chosenEncounter.Replace("Encounter_", "");
+        var splitIdx = chosenEncounter.IndexOf("_") + 1;
+        var encounterName = chosenEncounter.Substring(splitIdx, chosenEncounter.Length - splitIdx).Replace("_", " ");
+        Debug.Log($"Doing encounter {encounterName}");
+        LD.Ink.SetVariable("encounterName", encounterName);
         LD.Ink.DoKnot(chosenEncounter);
         UI.ChoiceMgr.OnFinished = () => SetState(GameData.GameState.Explore);
         UI.ChoiceMgr.RebuildChoices();
@@ -139,10 +145,18 @@ public static class Game {
         Func<int, int, int, int> calcVal = (low, high, stories)
             => UnityEngine.Random.Range(low, high+1) + stories;
 
-        LD.Ink.SetVariable($"{LocAttributes.animals}", calcVal(poi.LowAnimals, poi.HighAnimals, LD.Data.AnimalStories));
-        LD.Ink.SetVariable($"{LocAttributes.plants}", calcVal(poi.LowPlants, poi.HighPlants, LD.Data.PlantStories));
-        LD.Ink.SetVariable($"{LocAttributes.magic}", calcVal(poi.LowMagic, poi.HighMagic, LD.Data.MagicStories));
-        LD.Ink.SetVariable($"{LocAttributes.beauty}", calcVal(poi.LowBeauty, poi.HighBeauty, LD.Data.BeautyStories));
+        LD.Ink.SetVariable($"{LocAttributes.Animals}".ToLower(),
+            calcVal(poi.LowAnimals, poi.HighAnimals, LD.Data.AnimalStories));
+
+        LD.Ink.SetVariable($"{LocAttributes.Plants}".ToLower(),
+            calcVal(poi.LowPlants, poi.HighPlants, LD.Data.PlantStories));
+
+        LD.Ink.SetVariable($"{LocAttributes.Magic}".ToLower(),
+            calcVal(poi.LowMagic, poi.HighMagic, LD.Data.MagicStories));
+
+        LD.Ink.SetVariable($"{LocAttributes.Beauty}".ToLower(),
+            calcVal(poi.LowBeauty, poi.HighBeauty, LD.Data.BeautyStories));
+
 
         LD.Ink.DoKnot(locationKnot);
         UI.ChoiceMgr.RebuildChoices();

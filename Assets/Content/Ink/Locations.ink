@@ -89,19 +89,19 @@ VAR locationDescription = ""
 
 = Show_Plants
     {
-    - plants <= 0: {locationName} sits amongst thorny bushes, sticky spiderwebs, and lots of {badPlantName}s. Some of your fairies cut themselves on the plantlife.
-    - plants == 1: {locationName} is covered in slimy algae and surrounded by {badPlantName}s.
-    - plants == 2: {locationName} is surrounded by many other trees, {badPlantName}s and {plantName}s. It's a very crowded area.
-    - plants >= 3: {locationName} is amidst wonderful and abundant {plantName}s.
+    - plants <= 0: The {locationName} sits amongst thorny bushes, sticky spiderwebs, and lots of {badPlantName}s. Some of your fairies cut themselves on the plantlife.
+    - plants == 1: The {locationName} is covered in slimy algae and surrounded by {badPlantName}s.
+    - plants == 2: The {locationName} is surrounded by many other trees, {badPlantName}s and {plantName}s. It's a very crowded area.
+    - plants >= 3: The {locationName} is amidst wonderful and abundant {plantName}s.
     }
     -> DONE
 
 = Show_Magic
     {
     - magic <= 0: All trees should have nature magic but there is an evil energy here that seems to counter it.
-    - magic == 1: All trees have nature magic and {locationName} is no exception, although the aura is surprisingly faint.
-    - magic == 2: {locationName} pulls nature magic from the surrounding forest, although it's not a great abundance.
-    - magic >= 3: {locationName} is humming with magic energy.
+    - magic == 1: All trees have nature magic and this {locationName} is no exception, although the aura is surprisingly faint.
+    - magic == 2: The {locationName} pulls nature magic from the surrounding forest, although it's not a great abundance.
+    - magic >= 3: The {locationName} is humming with magic energy.
     }
     -> DONE
 
@@ -155,10 +155,10 @@ VAR locationDescription = ""
 
 = Show_Beauty
     {
-    - beauty <= 0: {locationName} is dark, dank, and hideously ugly. Caves are no place for a fairy.
-    - beauty == 1: {locationName} is dark and hard to admire, but there are some glowing insects that are fun to watch and chase.
-    - beauty == 2: {locationName} is made of stone with its interesting stone fingers reaching floor to ceiling, but it's otherwise quite plain.
-    - beauty >= 3: {locationName} has a beautiful underground stream filled with glowing swimming life.
+    - beauty <= 0: The {locationName} is dark, dank, and hideously ugly. Caves are no place for a fairy.
+    - beauty == 1: The {locationName} is dark and hard to admire, but there are some glowing insects that are fun to watch and chase.
+    - beauty == 2: The {locationName} is made of stone with its interesting stone fingers reaching floor to ceiling, but it's otherwise quite plain.
+    - beauty >= 3: The {locationName} has a beautiful underground stream filled with glowing swimming life.
     }
     -> DONE
 
@@ -273,10 +273,10 @@ VAR locationDescription = ""
 
 = Show_Animals
     {
-    - animals <= 0: As you explore {locationName} several angry {animalName}s jump and and chase you away.
+    - animals <= 0: As you explore the {locationName} several angry {animalName}s jump and and chase you away.
     - animals == 1: Your scounts have discovered very large and scary {animalName}s here.
     - animals == 2: There are a few {animalName}s here, but who knows if they are friendly?
-    - animals >= 3: As you explore {locationName} a {animalName} wanders up to you and wants to play. Hooray a friend.
+    - animals >= 3: As you explore the {locationName} a {animalName} wanders up to you and wants to play. Hooray a friend.
     }
     -> DONE
 
