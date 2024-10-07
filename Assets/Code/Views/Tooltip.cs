@@ -9,6 +9,10 @@ public class Tooltip: MonoBehaviour {
     public void Hide() => _tooltipAnchor.SetActive(false);
 
     public void Show(Resource res) {
+        if (!gameObject.activeSelf) {
+            LD.Audio.PlaySound(Sound.tooltip);
+        }
+
         _content.text = res switch {
             Resource.Coins => describeCoins(),
             Resource.Dust => describeDust(),

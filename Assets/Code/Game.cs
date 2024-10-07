@@ -16,6 +16,7 @@ public static class Game {
     public static void DoShowSummaryAndEndGame() {
         UI.ChoiceMgr.OnFinished = () => SetState(GameData.GameState.Gameover);
         UI.ChoiceMgr.ShowMassiveTextWindow(true);
+        UI.Fairies.Show(LD.Data.Fairies / 50);
         SetState(GameData.GameState.Settling);
     }
 

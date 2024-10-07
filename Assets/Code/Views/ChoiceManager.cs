@@ -31,9 +31,11 @@ public class ChoiceManager: MonoBehaviour {
     }
 
     public void OnTheEnd() {
+        LD.Audio.PlaySound(Sound.click);
         var callback = OnFinished;
         OnFinished = null;
         callback?.Invoke();
+        UI.Fairies.Hide();
     }
 
     public void RebuildChoices() {
@@ -78,6 +80,19 @@ public class ChoiceManager: MonoBehaviour {
         var targetContent = showIllustration ? _contentAreaShort : _contentAreaWide;
         if (!_massiveTextWindow.activeSelf) {
             targetContent.SetActive(true);
+        }
+
+        if (choiceButtons.Length == 0) {
+            Debug.LogError($"Path has zero choices but still is showing content");
+            if (OnFinished != null) {
+                OnTheEnd();
+                ClearChoices();
+            } else {
+                ClearChoices();
+                // Hack to deal with this extremely awful situtation that can be created by ink content
+                // not including any choices for the player
+                Game.DoChooseMapDestination();
+            }
         }
     }
 

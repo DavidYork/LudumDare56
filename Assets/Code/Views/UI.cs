@@ -9,12 +9,14 @@ public class UI: MonoBehaviour {
     public static ResourcesManager ResourcesMgr { get; private set; }
     public static MapManager MapMgr { get; private set; }
     public static Tooltip Tooltip { get; private set; }
+    public static FairyParty Fairies { get; private set; }
 
     public void Awake() {
         ChoiceMgr = GameObject.FindFirstObjectByType<ChoiceManager>(FindObjectsInactive.Include);
         ResourcesMgr = GameObject.FindFirstObjectByType<ResourcesManager>(FindObjectsInactive.Include);
         MapMgr = GameObject.FindFirstObjectByType<MapManager>(FindObjectsInactive.Include);
         Tooltip = GameObject.FindFirstObjectByType<Tooltip>(FindObjectsInactive.Include);
+        Fairies = GameObject.FindFirstObjectByType<FairyParty>(FindObjectsInactive.Include);
     }
 
     public void ShowIntro() => _introAnchor.SetActive(true);

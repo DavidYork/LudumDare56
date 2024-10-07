@@ -172,6 +172,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: UI Sound On
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 0
+        width: 435
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8651cbd25cbb24578b254ee9dd3130de
+      internalID: 219807872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Sound Off
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 0
+        width: 435
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb3cc10c7653447da539c005b643c83
+      internalID: 1564624548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -186,6 +228,8 @@ TextureImporter:
       UI Button: 810216232
       UI Panel: -949216624
       UI Resources chin: -3069688444733510968
+      UI Sound Off: 1564624548
+      UI Sound On: 219807872
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

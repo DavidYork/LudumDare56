@@ -22,5 +22,8 @@ public class Bootstrapper: MonoBehaviour {
         } else {
             throw new Exception($"Invalid game start state {_gameStartState}");
         }
+
+        LD.Audio.Muted = PlayerPrefs.GetInt("muted", 0) == 1;
+        LD.Audio.PlayAmbient(Ambient.heart_of_sin);
     }
 }

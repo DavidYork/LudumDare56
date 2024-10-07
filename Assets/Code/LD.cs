@@ -20,11 +20,11 @@ public static class LD {
         UI = GameObject.FindFirstObjectByType<UI>();
         Cfg = GameObject.FindFirstObjectByType<Config>();
         Boots = GameObject.FindFirstObjectByType<Bootstrapper>();
+        DB = new DB();
     }
 
     public static void OnStartNewGame(string inkJson) {
         Ink = new InkEngine(inkJson);
         Data = new GameData();
-        DB = new DB();
     }
 }

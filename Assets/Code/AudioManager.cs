@@ -1,11 +1,12 @@
 using UnityEngine;
 
 public enum Ambient {
-    test_ambient
+    heart_of_sin
 }
 
 public enum Sound {
-    click
+    click,
+    tooltip
 }
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -31,7 +32,7 @@ public class AudioManager: MonoBehaviour {
     }
 
     public void PlayAmbient(Ambient clip) {
-        var sfx = LD.DB.Sound($"{clip}");
+        var sfx = LD.DB.Ambient($"{clip}");
         if (sfx != null) {
             _ambientSource.clip = sfx;
             _ambientSource.Play();
@@ -44,6 +45,7 @@ public class AudioManager: MonoBehaviour {
         _sfxSource = buildSource("SFX source");
         _ambientSource = buildSource("Ambient source");
         _ambientSource.loop = true;
+        _ambientSource.volume = .5f;
     }
 
     AudioSource buildSource(string name) {

@@ -231,7 +231,7 @@ VAR encounterName = ""
 As you approach the {locationName} you discover a feast is going an around it. There are so many visitors - rabbits wearing their best suits, toads in tophats and mice wearing nice coats.
 
 + [Introduce yourselves] -> Introduction
-+ [Leave the feast alone and explore the area] You decide this is not productive to founding a colony. -> DONE
++ [Leave the feast alone and explore the area] You decide this is not productive to founding a colony. -> Finish
 
 = Introduction
     You walk up to the feast and introduce yourself
@@ -263,7 +263,6 @@ As you approach the {locationName} you discover a feast is going an around it. T
         ++ [Listen to the story] -> GainStory ->
             -> Finish
     }
-    -> DONE
 
 = Badness
     { shuffle:
@@ -328,6 +327,15 @@ As you approach the {locationName} you discover a feast is going an around it. T
 
 //----------------------------------------------------------------------------------------------------------------------
 // === Encounter_General_Wandering_Wolves
+
+
+
+
+
+
+
+
+
 
 // //----------------------------------------------------------------------------------------------------------------------
 // === Encounter_General_Family_of_Rats

@@ -47,6 +47,7 @@ public class POIView: MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 
         foreach (var path in UI.MapMgr.GetPathsFrom(this)) {
             if (path.Start == UI.MapMgr.CurrentPOI || path.End == UI.MapMgr.CurrentPOI) {
+                LD.Audio.PlaySound(Sound.click);
                 UI.MapMgr.OnPOIClicked(path, this);
                 return;
             }
