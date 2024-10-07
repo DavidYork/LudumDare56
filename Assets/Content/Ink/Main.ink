@@ -11,6 +11,7 @@ EXTERNAL gain                       (resource, amount)
 EXTERNAL gainStory                  (story)
 EXTERNAL get                        (resource)
 EXTERNAL lose                       (resource, amount)
+EXTERNAL repeatLocationInfo         ()
 
 //- Lists --------------------------------------------------------------------------------------------------------------
 LIST Res                            =   Coins,

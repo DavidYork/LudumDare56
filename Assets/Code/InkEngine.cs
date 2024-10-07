@@ -41,6 +41,7 @@ public readonly struct InkEngineState {
 
 public class InkEngine {
     Story _story;
+    string _currentKnot;
 
     public InkEngineState CurrentState { get; private set; }
 
@@ -52,6 +53,7 @@ public class InkEngine {
         _story.BindExternalFunction("gainStory", (InkList res) => onGainStory(res.ToEnum<LocAttributes>()));
         _story.BindExternalFunction("lose", (InkList res, int amount) => onLose(res.ToEnum<Resource>(), amount));
         _story.BindExternalFunction("showSummaryAndEndGame", onShowSummaryAndEndGame);
+        _story.BindExternalFunction("repeatLocationInfo", onRepeatLocationInfo);
     }
 
     public void DoChoice(InkChoice command) {
@@ -60,6 +62,7 @@ public class InkEngine {
     }
 
     public void DoKnot(string knot) {
+        _currentKnot = knot;
         _story.ChoosePathString(knot);
         executeUntilNextChoice();
     }
@@ -116,6 +119,8 @@ public class InkEngine {
     void onChooseMapDestination() => Game.DoChooseMapDestination();
 
     void onShowSummaryAndEndGame() => Game.DoShowSummaryAndEndGame();
+
+    void onRepeatLocationInfo() => DoKnot(_currentKnot);
 
     int onGet(Resource res) => (res) switch {
         Resource.Coins => LD.Data.Coins,

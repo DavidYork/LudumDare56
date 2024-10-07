@@ -13,6 +13,9 @@ VAR score = 0
     If you decide this is where the colony should live it will end the game.
 
     + [Settle here (ends the game)] -> DoSettle
+    + [Inspect the area again]
+        ~ repeatLocationInfo()
+        ++ [Continue] -> DONE
     + [Nevermind, move on] -> DONE
 
 //----------------------------------------------------------------------------------------------------------------------

@@ -158,11 +158,11 @@ VAR encounterName = ""
     33 fairies sit in a circle and chant words of ancient fey magic. The coin disappears and the fairies go into a deep trance.
     {shuffle:
     - One speaks "this is a blessed stone, placed here by those that love the forest. It will bring fortune to a colony should we choose to found one nearby."
-        ~ nature += 2
+        ~ plants += 2
         ~ magic += 2
     - One speaks "this stone traps a vile, evil creature. This place is cursed, we should leave."
         ~ magic -= 2
-        ~ nature -= 2
+        ~ plants -= 2
     - One speaks "this stone has shared its wisdow. It has sat here for so long and seen so many things."
         With newfound knowledge of the area your fairies discover a hidden cache of {RandGain(Res.Trinkets, 5, 10)} trinkets buried nearby!
     - A look of horror covers the face of one of the fairies. "NO! This stone is evil!"
@@ -272,6 +272,89 @@ As you approach the {locationName} you discover a feast is going an around it. T
     - You barely escape! It seems not everybody can handle their feyberries.
     }
     - -> Finish
+
+//----------------------------------------------------------------------------------------------------------------------
+=== Encounter_General_Wandering_Fox
+{ shuffle:
+    - Approaching the area you run into a fox. It pops out of a hole in the ground right in the middle of your fairies.
+        + [Foxes are dangerous. Run away!]
+            { shuffle:
+            - -> Escape
+            - -> FoxAttack
+            }
+        + {get(Res.Fruit) >= 10} [Throw food at the fox and run away! -10 feyberries]
+            {
+            - RANDOM(0, 2) == 0: -> FoxChomp
+            - else: -> Escape
+            }
+
+    - Approaching the area you see a fox nearby. It doesn't seem to have noticed you. Foxes are very dangerous and known to eat fairies.
+        + [Foxes are dangerous. Sneak around it]
+            { shuffle:
+                - You sneak past it safely. -> Finish
+                - The fox notices you and changes right for the nearest fairies! -> FoxAttack
+            }
+        + [Leave some food so it won't follow us and sneak away]
+            { shuffle:
+            - You sneak past it safely. -> Finish
+            - The fox notices you and the berries but decides the berries are less trouble to eat. -> Escape
+            - The fox notices you and changes right for the nearest fairies! -> FoxAttack
+            }
+        + [Send two fairies to lure him away while the rest escape]
+            {
+            - RANDOM(0, 3) == 0: The distraction is successful and all the fairies escape. -> Finish
+            - RANDOM(0, 3) == 0: The fox is quick and leaps into the air chomping one of the fairies.
+                ~ lose(Res.Fairies, 1)
+                -> FoxAttack
+            - else: The distraction is successful but the two fairies were never seen again.
+                ~ lose(Res.Fairies, 2)
+                -> Finish
+            }
+    - As you approach the area a fox leaps out at you and charges your fairies! -> FoxAttack
+}
+
+= FoxAttack
+    The fox leaps into the fray <>
+    { shuffle:
+        - but the fairies are too fast and manage to escape! What luck. -> Finish
+        - and catches and kills {RandLoss(Res.Fairies, 3, 30)} fairies before the rest can escape. -> Finish
+    }
+
+= FoxChomp
+    The fox catches up with the fairies and manages to catch and kill {RandLoss(Res.Fairies, 3, 30)} fairies before the rest escape. -> Finish
+
+= Escape
+    What a relief, you managed to get away! -> Finish
+
+//----------------------------------------------------------------------------------------------------------------------
+// === Encounter_General_Wandering_Wolves
+
+// //----------------------------------------------------------------------------------------------------------------------
+// === Encounter_General_Family_of_Rats
+
+// //----------------------------------------------------------------------------------------------------------------------
+// === Encounter_General_A_Murder_of_Crows
+
+// //----------------------------------------------------------------------------------------------------------------------
+// === Encounter_General_A_Hungry_Hawk
+
+// //----------------------------------------------------------------------------------------------------------------------
+// === Encounter_General_The_Angry_Boar
+
+// //----------------------------------------------------------------------------------------------------------------------
+// === Encounter_General_The_Squirrel_Race
+
+// //----------------------------------------------------------------------------------------------------------------------
+// === Encounter_General_The_Great_Insulter
+
+// //----------------------------------------------------------------------------------------------------------------------
+// === Encounter_General_The_Hungry_Frog
+
+// //----------------------------------------------------------------------------------------------------------------------
+// === Encounter_General_The_Vengeful_Spirit
+
+
+
 
 //----------------------------------------------------------------------------------------------------------------------
 // Utilities
