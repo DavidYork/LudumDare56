@@ -1,6 +1,6 @@
-# Ludum Dare 56 Compo project. Theme: Tiny Creatures
+# Ludum Dare 56 Jam project. Theme: Tiny Creatures
 
-Ludum Dare is a game jam. This is a "compo" entry for the 56th Ludum Dare jam, more info here: [https://ldjam.com](https://ldjam.com).
+Ludum Dare is a game jam. This is a "jam" entry for the 56th Ludum Dare jam, more info here: [https://ldjam.com](https://ldjam.com). This game was created by David York (no team) in 72 hours.
 
 # Project Components
 

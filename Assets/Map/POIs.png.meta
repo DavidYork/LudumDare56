@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Colony
+      name: Colony 0
       rect:
         serializedVersion: 2
         x: 1925
@@ -529,6 +529,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Colony 1
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 295
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccbdb4cc35284516af20631e6c4be33
+      internalID: -580178549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colony 2
+      rect:
+        serializedVersion: 2
+        x: 2632
+        y: 296
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1fef93d16904f65999a9b5b516fc22
+      internalID: 239534117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colony 3
+      rect:
+        serializedVersion: 2
+        x: 2968
+        y: 296
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed2d5fbaeb7341f8a09c5cdbc341ee1
+      internalID: 686582758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -540,7 +603,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Colony: -799462995
+      Colony 0: -799462995
+      Colony 1: -580178549
+      Colony 2: 239534117
+      Colony 3: 686582758
       POI bridge: 95805694
       POI cave: -263407523
       POI chest: 715647872

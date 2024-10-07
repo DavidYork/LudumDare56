@@ -11,4 +11,6 @@ public class Config: MonoBehaviour {
     public float GfxResourceWiggleDuration = 1f;
 
     public Color GfxWhiteTextColor = Color.white;
+
+    public float AnimTimePerFrame = .2f;
 }
